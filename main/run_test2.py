@@ -3,6 +3,7 @@
 # 888888
 
 import sys
+print("sys.path==",sys.path)
 # sys.path.append("E:/www/ImoocInterface")
 from base.runmethod import RunMethod
 import json
@@ -14,8 +15,9 @@ from util.send_email import SendEmail
 import requests
 from util.operation_header import OperationHeader
 from util.operation_json import OperetionJson
-
+print("sys.path==",sys.path)
 class RunTest:
+	print("sys.path==", sys.path)
 	def __init__(self,fileName,sheetid):
 
 		self.run_method = RunMethod()
@@ -143,7 +145,7 @@ class RunTest:
 
 if __name__ == '__main__':
 
-	print(sys.path)
+	print("sys.path==",sys.path)
 
 	# 选择数据环境 线上/测试
 	db_enviroment="test"
