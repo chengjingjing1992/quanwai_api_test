@@ -142,6 +142,9 @@ class RunTest:
 
 
 if __name__ == '__main__':
+
+	print(sys.path)
+
 	# 选择数据环境 线上/测试
 	db_enviroment="test"
 	# db_enviroment="prod"
