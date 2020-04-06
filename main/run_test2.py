@@ -15,10 +15,9 @@ from util.send_email import SendEmail
 import requests
 from util.operation_header import OperationHeader
 from util.operation_json import OperetionJson
+sys.path.append(sys.path[0]+'\..')
 print("sys.path==",sys.path)
-sys.path.append("/Library/Python/2.7/site-packages")
 class RunTest:
-	print("sys.path==", sys.path)
 	def __init__(self,fileName,sheetid):
 
 		self.run_method = RunMethod()
@@ -146,7 +145,6 @@ class RunTest:
 
 if __name__ == '__main__':
 
-	print("sys.path==",sys.path)
 
 	# 选择数据环境 线上/测试
 	db_enviroment="test"
