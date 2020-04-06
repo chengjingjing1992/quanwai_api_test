@@ -16,6 +16,7 @@ import requests
 from util.operation_header import OperationHeader
 from util.operation_json import OperetionJson
 print("sys.path==",sys.path)
+sys.path.append("/Library/Python/2.7/site-packages")
 class RunTest:
 	print("sys.path==", sys.path)
 	def __init__(self,fileName,sheetid):
@@ -154,11 +155,13 @@ if __name__ == '__main__':
 
 
 
-	# 选择用例文件
-	# fileName='../dataconfig/case1.xls'
-	# fileName = '../dataconfig/confucius.xls'
+
+
+	# # 选择用例文件
+	# # fileName='../dataconfig/case1.xls'
+	# # fileName = '../dataconfig/confucius.xls'
 	fileName = '../dataconfig/management.xls'
-	# fileName = '../dataconfig/yunying.xls'
+	# # fileName = '../dataconfig/yunying.xls'
 	sheetid=0
 	run = RunTest(fileName=fileName,sheetid=sheetid)
 	run.go_on_run()
