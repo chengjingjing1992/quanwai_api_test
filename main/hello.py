@@ -1,4 +1,5 @@
 #coding=utf-8
+import sys
 class HelloWorld:
     def __init__(self):
         self.name='chengjingjing'
@@ -18,5 +19,6 @@ class HelloWorld:
 
 
 if __name__ == '__main__':
+    print("sys.path==",sys.path)
     for i in range(1,10):
         print(i)
