@@ -3,7 +3,6 @@
 # 888888
 
 import sys
-print("sys.path==",sys.path)
 # sys.path.append("E:/www/ImoocInterface")
 from base.runmethod import RunMethod
 import json
@@ -15,8 +14,6 @@ from util.send_email import SendEmail
 import requests
 from util.operation_header import OperationHeader
 from util.operation_json import OperetionJson
-sys.path.append(sys.path[0]+'\..')
-print("sys.path==",sys.path)
 class RunTest:
 	def __init__(self,fileName,sheetid):
 
