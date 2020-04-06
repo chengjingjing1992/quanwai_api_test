@@ -155,7 +155,7 @@ if __name__ == '__main__':
 	# # 选择用例文件
 	# # fileName='../dataconfig/case1.xls'
 	# # fileName = '../dataconfig/confucius.xls'
-	fileName = '../dataconfig/management.xls'
+	fileName = 'dataconfig/management.xls'
 	# # fileName = '../dataconfig/yunying.xls'
 	sheetid=0
 	run = RunTest(fileName=fileName,sheetid=sheetid)
